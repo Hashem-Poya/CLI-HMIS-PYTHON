@@ -1,7 +1,6 @@
 from excel_file_handler import *
 import sys
 
-
 def main():
 
 	file_handler = Excel_File_Handler()
@@ -52,7 +51,9 @@ def main():
 		elif operation == '7':
 
 			# Calculate & Generate the bill
-			pass
+			file_handler.calculate_and_generate_bill()
+
+
 		elif operation == 'q':
 			sys.exit()
 
